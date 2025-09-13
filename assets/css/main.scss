@@ -39,3 +39,26 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+.education-entry {
+  border-left: 3px solid #2c3e50;
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+
+.edu-date {
+  font-weight: bold;
+  color: #34495e;
+  margin-bottom: 5px;
+}
+
+.edu-title {
+  margin: 0;
+  font-size: 1.2em;
+  color: #2c3e50;
+}
+
+.edu-details p {
+  margin: 5px 0;
+  color: #555;
+}

@@ -24,6 +24,22 @@
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
       <!-- Font Awesome icons / Biographic information  -->
+       {% if author.uhcs %}
+  <li>
+    <a href="{{ author.uhcs }}" target="_blank">
+      <i class="fas fa-fw fa-university icon-pad-right" aria-hidden="true"></i>
+      UH Computer Science
+    </a>
+  </li>
+{% endif %}
+{% if author.linkedin_feed %}
+  <li>
+    <a href="{{ author.linkedin_feed }}" target="_blank">
+      <i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>
+      LinkedIn Feed
+    </a>
+  </li>
+{% endif %}
       {% if author.location %}
         <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
       {% endif %}

@@ -8,5 +8,7 @@ group :jekyll_plugins do
   gem 'jemoji'
   gem 'webrick', '~> 1.8'
 end
-
+platforms :mingw, :mswin, :x64_mingw do
+  gem 'tzinfo-data'
+end
 gem 'github-pages'
